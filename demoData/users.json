@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "username": "ogrenci1",
+      "password": "1234567890",
+      "role": "student",
+      "name": "Ahmet"
+    },
+    {
+      "username": "ogrenci2",
+      "password": "1234567890",
+      "role": "student",
+      "name": "Mehmet"
+    },
+    {
+      "username": "ogretmen1",
+      "password": "1234567890",
+      "role": "teacher",
+      "name": "Servet"
+    },
+    {
+      "username": "admin1",
+      "password": "1234567890",
+      "role": "admin",
+      "name": "Selcuk"
+    }
+  ]
+}

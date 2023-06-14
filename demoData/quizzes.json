@@ -1,0 +1,232 @@
+{
+  "quizzes": [
+    {
+      "title": "Quiz 1",
+      "questions": [
+        {
+          "title": "There is a great concert on Friday. I don't want to go there _____ . What about going together?",
+          "answers": [
+            {
+              "title": "alone",
+              "correct": true
+            },
+            {
+              "title": "loyal",
+              "correct": false
+            },
+            {
+              "title": "honest",
+              "correct": false
+            },
+            {
+              "title": "sneaky",
+              "correct": false
+            },
+            {
+              "title": "fast",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "title": "Can we _____ together for the English exam? You know I missed some classes.",
+          "answers": [
+            {
+              "title": "draw",
+              "correct": false
+            },
+            {
+              "title": "study",
+              "correct": true
+            },
+            {
+              "title": "make",
+              "correct": false
+            },
+            {
+              "title": "tell",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "title": "What are you ______ tonight? Shall we go out?",
+          "answers": [
+            {
+              "title": "sitting",
+              "correct": false
+            },
+            {
+              "title": "making",
+              "correct": false
+            },
+            {
+              "title": "going",
+              "correct": false
+            },
+            {
+              "title": "doing",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "title": "Sally is giving a party at the weekend. I am sure we are going to have great _____ .",
+          "answers": [
+            {
+              "title": "page",
+              "correct": false
+            },
+            {
+              "title": "nature",
+              "correct": false
+            },
+            {
+              "title": "fun",
+              "correct": true
+            },
+            {
+              "title": "exam",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "title": "A _____ friend always helps you when you need help.",
+          "answers": [
+            {
+              "title": "true",
+              "correct": true
+            },
+            {
+              "title": "boring",
+              "correct": false
+            },
+            {
+              "title": "poor",
+              "correct": false
+            },
+            {
+              "title": "loud",
+              "correct": false
+            }
+          ]
+        }
+      ],
+      "isPublished": true,
+      "questionNum": 5
+    },
+    {
+      "title": "Quiz 2",
+      "questions": [
+        {
+          "title": "We want to visit our _____ in İstanbul next weekend. They live in Kadiköy.",
+          "answers": [
+            {
+              "title": "screens",
+              "correct": false
+            },
+            {
+              "title": "exams",
+              "correct": false
+            },
+            {
+              "title": "invitations",
+              "correct": false
+            },
+            {
+              "title": "relatives",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "title": "I don't like Elizabeth at all. She tells my _____ to everyone.",
+          "answers": [
+            {
+              "title": "reasons",
+              "correct": false
+            },
+            {
+              "title": "classmates",
+              "correct": false
+            },
+            {
+              "title": "secrets",
+              "correct": true
+            },
+            {
+              "title": "friends",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "title": "Maria and Dave want to _____ all of their friends to the new year party.",
+          "answers": [
+            {
+              "title": "invite",
+              "correct": true
+            },
+            {
+              "title": "share",
+              "correct": false
+            },
+            {
+              "title": "count",
+              "correct": false
+            },
+            {
+              "title": "forget",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "title": "Karen and Teresa are best friends. They have a lot of things in _____ .",
+          "answers": [
+            {
+              "title": "loyal",
+              "correct": false
+            },
+            {
+              "title": "arrogant",
+              "correct": false
+            },
+            {
+              "title": "terrible",
+              "correct": false
+            },
+            {
+              "title": "common",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "title": " I'm sorry, but I can't _____ you today. I have some plans with my family.",
+          "answers": [
+            {
+              "title": "share",
+              "correct": false
+            },
+            {
+              "title": "join",
+              "correct": true
+            },
+            {
+              "title": "play",
+              "correct": false
+            },
+            {
+              "title": "change",
+              "correct": false
+            }
+          ]
+        }
+      ],
+      "isPublished": true,
+      "questionNum": 5
+    }
+  ]
+}
