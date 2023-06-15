@@ -1,24 +1,19 @@
+version: "3.8"
+
 services:
-  mongo_db:
-    image: mongo
-    restart: always
-    ports:
-      - 2717:27017
-    volumes:
-      - mongo_db:/data/db
-  
-  api:
+  app:
     build: .
     ports:
-      - "8371:8371"
+      - "7272:7272"
     environment:
-      NODE_ENV: "development"
-      MONGO_URI: "mongodb://mongo_db:27017/express-ts-rest-api"
-      MONGO_PASSWORD: ""
-      API_VERSION: "0.0.1"
-      PORT: "8371"
-    depends_on:
-      - mongo_db
-
-volumes:
-  mongo_db: {}
+      - MONGO_URI=mongodb://mongo:27017/quizapp
+      - NODE_ENV=development
+      - API_VERSION=0.0.1
+      - PORT=7272
+      - JWT_SECRET=ASDASDASDKJSDCKFLJAESICKAEOLKCFSDE
+      - JWT_EXPIRE=90d
+      - JWT_EXPIRE_N=90
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
