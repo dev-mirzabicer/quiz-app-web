@@ -27,6 +27,4 @@ jobs:
       - name: Deploy to GitHub Pages
         run: |
           cd client
-          npm run deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          npx gh-pages -d dist --repo=https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
