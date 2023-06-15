@@ -15,10 +15,20 @@ const app = express();
 
 // Global Middleware
 app.use(helmet());
-// app.use(cors({ origin: "https://dev-mirzabicer.github.io" }));
-// app.options("/*", (_, res) => {
-//   res.sendStatus(200);
-// });
+app.use(cors({ origin: "https://dev-mirzabicer.github.io" }));
+app.options("/*", (_, res) => {
+  res.sendStatus(200);
+});
+app.use((req, res, next) => {
+  // Set CORS headers
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Methods", "GET, HEAD, OPTIONS, POST, PUT");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version, Authorization"
+  );
+  next();
+});
 app.use(morgan("dev"));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
