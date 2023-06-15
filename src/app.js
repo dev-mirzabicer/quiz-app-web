@@ -16,6 +16,9 @@ const app = express();
 // Global Middleware
 app.use(helmet());
 app.use(cors({ origin: "https://dev-mirzabicer.github.io" }));
+app.options("/*", (_, res) => {
+  res.sendStatus(200);
+});
 app.use(morgan("dev"));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
