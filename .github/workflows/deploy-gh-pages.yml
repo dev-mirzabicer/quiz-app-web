@@ -30,4 +30,4 @@ jobs:
       - name: Deploy to GitHub Pages
         run: |
           cd client
-          npx gh-pages -d dist --repo=https://${{ secrets.GH_PAGES_PAT }}@github.com/${{ github.repository }}.git
+          npx gh-pages -d dist --repo=https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
