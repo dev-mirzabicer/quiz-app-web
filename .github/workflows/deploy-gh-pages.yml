@@ -23,7 +23,10 @@ jobs:
           cd client
           npm ci
           npm run build
-
+      - name: Set up git user
+        run: |
+          git config --global user.email "mirzabicer.dev@gmail.com"
+          git config --global user.name "dev-mirzabicer"
       - name: Deploy to GitHub Pages
         run: |
           cd client
