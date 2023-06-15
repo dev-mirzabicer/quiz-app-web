@@ -40,7 +40,7 @@ export default {
   methods: {
     async getQuiz() {
       try {
-        this.quiz = (await axios.get(`http://localhost:7272/api/v0.0.1/solved-quiz/${this.$route.params.quizId}`, {
+        this.quiz = (await axios.get(`https://quiz-app-web-seven.vercel.app/api/v0.0.1/solved-quiz/${this.$route.params.quizId}`, {
           headers: {
             Authorization: `Bearer ${this.$cookies.get("authToken")}`,
           },

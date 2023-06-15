@@ -39,7 +39,7 @@ export default {
   methods: {
     getQuizzes() {
       axios
-        .get("http://localhost:7272/api/v0.0.1/solved-quiz/my", {
+        .get("https://quiz-app-web-seven.vercel.app/api/v0.0.1/solved-quiz/my", {
           headers: {
             Authorization: `Bearer ${this.$cookies.get("authToken")}`,
           },

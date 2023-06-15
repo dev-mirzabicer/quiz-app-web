@@ -37,7 +37,7 @@ export default {
     },
     addQuiz() {
       axios.post(
-        "http://localhost:7272/api/v0.0.1/quiz/",
+        "https://quiz-app-web-seven.vercel.app/api/v0.0.1/quiz/",
         {
           title: "Untitled Quiz",
           isPublished: false,

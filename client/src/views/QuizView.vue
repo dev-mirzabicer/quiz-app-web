@@ -83,7 +83,7 @@ export default {
   methods: {
     async getQuiz() {
       try {
-        this.quiz = (await axios.get(`http://localhost:7272/api/v0.0.1/quiz/${this.$route.params.id}`, {
+        this.quiz = (await axios.get(`https://quiz-app-web-seven.vercel.app/api/v0.0.1/quiz/${this.$route.params.id}`, {
           headers: {
             Authorization: `Bearer ${this.$cookies.get("authToken")}`,
           },
@@ -139,7 +139,7 @@ export default {
         })
       }
       try {
-        this.quiz = (await axios.patch(`http://localhost:7272/api/v0.0.1/quiz/${this.$route.params.id}`, newQuiz, {
+        this.quiz = (await axios.patch(`https://quiz-app-web-seven.vercel.app/api/v0.0.1/quiz/${this.$route.params.id}`, newQuiz, {
           headers: {
             Authorization: `Bearer ${this.$cookies.get("authToken")}`,
           },
@@ -161,7 +161,7 @@ export default {
       if (confirm("Are you sure you want to delete this quiz?")) {
         this.deleted = true;
         try {
-          await axios.delete(`http://localhost:7272/api/v0.0.1/quiz/${this.$route.params.id}`, {
+          await axios.delete(`https://quiz-app-web-seven.vercel.app/api/v0.0.1/quiz/${this.$route.params.id}`, {
             headers: {
               Authorization: `Bearer ${this.$cookies.get("authToken")}`,
             },

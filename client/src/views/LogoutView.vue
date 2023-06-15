@@ -8,7 +8,7 @@ import axios from "axios";
 export default {
   name: "LogoutView",
   beforeMount() {
-    axios.post("http://localhost:7272/api/v0.0.1/user/logout", {}, {
+    axios.post("https://quiz-app-web-seven.vercel.app/api/v0.0.1/user/logout", {}, {
       headers: {
         Authorization: `Bearer ${this.$cookies.get("authToken")}`,
       },

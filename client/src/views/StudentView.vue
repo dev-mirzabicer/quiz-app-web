@@ -38,7 +38,7 @@ export default {
   },
   methods: {
     getStudent() {
-      axios.get("http://localhost:7272/api/v0.0.1/user/student/" + this.$route.params.id, {
+      axios.get("https://quiz-app-web-seven.vercel.app/api/v0.0.1/user/student/" + this.$route.params.id, {
         headers: {
           Authorization: `Bearer ${this.$cookies.get("authToken")}`
         }
@@ -49,7 +49,7 @@ export default {
       });
     },
     getQuizzes() {
-      axios.get(`http://localhost:7272/api/v0.0.1/solved-quiz/?userId=${this.$route.params.id}`, {
+      axios.get(`https://quiz-app-web-seven.vercel.app/api/v0.0.1/solved-quiz/?userId=${this.$route.params.id}`, {
         headers: {
           Authorization: `Bearer ${this.$cookies.get("authToken")}`
         }

@@ -31,7 +31,7 @@ export default {
   },
   methods: {
     async getStudents() {
-      axios.get("http://localhost:7272/api/v0.0.1/user/student/", {
+      axios.get("https://quiz-app-web-seven.vercel.app/api/v0.0.1/user/student/", {
         headers: {
           Authorization: `Bearer ${this.$cookies.get("authToken")}`
         }

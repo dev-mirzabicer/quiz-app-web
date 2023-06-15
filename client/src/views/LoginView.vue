@@ -40,7 +40,7 @@ export default {
     methods: {
         handleSubmit() {
             axios
-                .post("http://localhost:7272/api/v0.0.1/user/login", {
+                .post("https://quiz-app-web-seven.vercel.app/api/v0.0.1/user/login", {
                     username: this.username,
                     password: this.password,
                 })

@@ -42,7 +42,7 @@ export default {
   methods: {
     getQuizAndQuestions() {
       axios
-        .get(`http://localhost:7272/api/v0.0.1/solved-quiz/my/${this.$route.params.id}`, {
+        .get(`https://quiz-app-web-seven.vercel.app/api/v0.0.1/solved-quiz/my/${this.$route.params.id}`, {
           headers: {
             Authorization: `Bearer ${this.$cookies.get("authToken")}`,
           },
@@ -92,7 +92,7 @@ export default {
         })
       }
       axios
-        .patch(`http://localhost:7272/api/v0.0.1/solved-quiz/my/${this.quiz._id}`, quizToSubmit, {
+        .patch(`https://quiz-app-web-seven.vercel.app/api/v0.0.1/solved-quiz/my/${this.quiz._id}`, quizToSubmit, {
           headers: {
             Authorization: `Bearer ${this.$cookies.get("authToken")}`,
           },
