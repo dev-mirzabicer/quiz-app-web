@@ -2,7 +2,7 @@ const fs = require("fs");
 const mongoose = require("mongoose");
 const Quiz = require("../src/models/quiz.model");
 const User = require("../src/models/user.model");
-require("dotenv").config({ path: ".env" });
+require("dotenv").config({ path: "back.env" });
 
 mongoose
   .connect(process.env.MONGO_URI)
