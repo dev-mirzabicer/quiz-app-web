@@ -16,9 +16,6 @@ const app = express();
 // Global Middleware
 app.use(helmet());
 app.use(cors({ origin: "https://dev-mirzabicer.github.io" }));
-app.options("/*", (_, res) => {
-  res.sendStatus(200);
-});
 app.use((req, res, next) => {
   // Set CORS headers
   res.header("Access-Control-Allow-Origin", "*");
@@ -27,7 +24,13 @@ app.use((req, res, next) => {
     "Access-Control-Allow-Headers",
     "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version, Authorization"
   );
-  next();
+  if (req.method === "OPTIONS") {
+    // Pre-flight request. Reply successfully:
+    res.status(200).send();
+  } else {
+    // Move on to the next middleware for non-OPTIONS requests
+    next();
+  }
 });
 app.use(morgan("dev"));
 app.use(bodyParser.urlencoded({ extended: false }));
