@@ -14,7 +14,6 @@ router
     userController.getUsers
   )
   .post(userController.createUser);
-// ⬆ Bu ozelligi yeni kullanici eklemek isterseniz diye koydum, normalde guvelik sorunlari cikaracak bir ozellik.
 
 router
   .route("/student")
