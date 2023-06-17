@@ -38,18 +38,15 @@ app.use(bodyParser.json());
 app.use(mongoSanitize());
 app.use(cookieParser());
 
-//Route'lar ve Bilinmeyen URL'ler için Middleware
 useRoutes(app);
 app.all("*", (req, res, next) => {
   next(new ApiError(`Page not found: ${req.url}`, 404));
 });
 
-// Global Error Handler
 app.use(errorHandler);
 
 console.warn(process.env.MONGO_URI);
 
-// MongoDB Bağlantısı
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => {
