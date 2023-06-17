@@ -2,6 +2,12 @@ name: Vercel Production Deployment
 env:
   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+  MONGO_URI: ${{ secrets.MONGO_URI }}
+  NODE_ENV: development
+  API_VERSION: 0.0.1
+  PORT: 7272
+  JWT_SECRET: ${{ secrets.JWT_SECRET }}
+  JWT_EXPIRE: 90d
 on:
   push:
     branches:
